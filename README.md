@@ -1,6 +1,8 @@
 # ChatBot-ANN
 ChatBot basato su rete neurale artificiale (ANN). Il bot è progettato per riconoscere le intezioni dell'utente basate su input e rispondere in modo appropriato.
 
+[Clicca qui](https://mega.nz/file/q1wwjKbJ#vsCOyN612PCBEZ8Imz4gMYk4XnXRxHTntCcGu4ZSSLI) se si vuole scaricare la vesione exe.
+
 ### Istruzioni per l'avvio
 Per evitare conflitti di permessi è meglio creare un ambiente virtuale dove installare le librerie richieste all'interno del file `requirements.txt`.
 1. Creare un ambiente virtuale nella directory di lavoro: `python -m venv venvpython -m venv venv`.
