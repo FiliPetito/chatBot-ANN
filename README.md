@@ -5,7 +5,7 @@ ChatBot basato su rete neurale artificiale (ANN). Il bot è progettato per ricon
 
 ### Istruzioni per l'avvio
 Per evitare conflitti di permessi è meglio creare un ambiente virtuale dove installare le librerie richieste all'interno del file `requirements.txt`.
-1. Creare un ambiente virtuale nella directory di lavoro: `python -m venv venvpython -m venv venv`.
+1. Creare un ambiente virtuale nella directory di lavoro: `python -m venv venv`.
 2. Attivare l'ambiente virtuale: `venv\Scripts\activate`.
 3. Installare le dipendenze: `pip install -r requirements.txt`.
 4. Prima di avviare `chat.py` bisogna creare il file `data.pth` eseguendo `python train.py`.
