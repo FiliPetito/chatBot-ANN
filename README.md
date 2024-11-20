@@ -6,6 +6,6 @@ Il file intents.json definisce la base di conoscenza del bot. È strutturato in 
   - Tag: Un identificatore unico per l'intezione.
   - Patterns: Frasi che rappresentano esempi di input dell'utente.
   - Response: Risposte predefinite che il bot può utilizzare.
-Funzionamento
+### Funzionamento
   1. Le frasi nei patterns vengono usate per addestrare il modello.
   2. Durante l'inferenza, il bot confronta l'input dell'utente con queste frasi, cercando la probabilità di appartenenza a ciascun tag.
