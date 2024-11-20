@@ -1,0 +1,6 @@
+numpy
+nltk
+torch
+Flask
+requests
+waitress

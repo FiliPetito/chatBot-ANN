@@ -1,0 +1,112 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "saluto",
+      "patterns": [
+        "Ciao",
+        "Hey",
+        "C'è qualcuno?",
+        "Hello",
+        "Buon giorno"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Savle, io sono Cardinal",
+        "Salve, cosa posso fare per te",
+        "Salve, come posso aiutarti?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "addio",
+      "patterns": ["Addio", "Ci vediamo dopo", "Addio"],
+      "responses": [
+        "Ci vediamo dopo, grazie per la visita",
+        "Buona giornata",
+        "Ciao, torna presto"
+      ]
+    },
+    {
+      "tag": "grazie",
+      "patterns": ["Grazie", "È utile", "Grazie mille!"],
+      "responses": ["Felice di aiutare!", "Quando vuoi!", "Con piacere"]
+    },
+    {
+      "tag" : "creatore",
+      "patterns": ["Chi ti ha creato?", "Chi è il tuo creatore?", "Mi dici il nome del tuo creatore?"],
+      "responses": ["Il mio creatore è Mario Petito", "Mi ha creato Mario Petito", "Sono una creazione di Mario Petito"]
+    },
+    {
+      "tag" : "domandeEsistenziali",
+      "patterns": ["Cosa sei?"],
+      "responses": ["Sono una IA creata da Mario Petito, il mio linguaggio di programmazione è Python ed utilizzo la libreria nltk"]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {
+      "tag" : "circuitoAperto",
+      "patterns" : ["Creami un circuito aperto", "Apri il circuito"],
+      "responses": ["\n  ┌──────┬──────┐ \n   | ░░░░░░| ░░░░░░ \\ \n+╩ ░░░░░  | ░░░░░░ | \n  ░░░░░░░R ░░░░░  | \n-╦ ░░░░░  | ░░░░░░ | \n  | ░░░░░░| ░░░░░░ | \n └──────┴──────┘ \n"]
+    }
+    ,
+    {
+      "tag" : "circuitoChiuso",
+      "patterns" : ["Creami un circuito chiuso", "Chiudi il circuito"],
+      "responses" : ["\n  ┌──────┬──────┐ \n   | ░░░░░░| ░░░░░░ | \n+╩ ░░░░░  | ░░░░░░ | \n  ░░░░░░░R ░░░░░  | \n-╦ ░░░░░  | ░░░░░░ | \n  | ░░░░░░| ░░░░░░ | \n └──────┴──────┘ \n"]
+    },
+    {
+      "tag": "vario",
+      "patterns": ["Sai dirmi cosa sai fare?", "Cosa sai fare?", "Hai qualche specialità?"],
+      "responses": [
+        "Certo, chiedimi di creare un circuito aperto o chiuso", "So apire e chiudere un circuito"
+      ]
+    },
+    {
+      "tag": "orario",
+      "patterns": ["Sai dirmi che ore sono?", "Che ore sono?", "Sai dirmi l'ora?", "Sai dirmi che giorno è?", "Che giorno è?"],
+      "responses": [
+        "Certo,"
+      ]
+    }
+  ]
+}
