@@ -6,8 +6,9 @@ Per evitare conflitti di permessi è meglio creare un ambiente virtuale dove ins
 1. Creare un ambiente virtuale nella directory di lavoro: `python -m venv venvpython -m venv venv`.
 2. Attivare l'ambiente virtuale: `venv\Scripts\activate`.
 3. Installare le dipendenze: `pip install -r requirements.txt`.
-4. Disattivare l'ambiente quando non lo si utilizza: `deactivate
-`.
+4. Prima di avviare `chat.py` bisogna creare il file `data.pth` eseguendo `python train.py`.
+5. Avviare la chat eseguendo `python chat.py`.
+6. Disattivare l'ambiente quando non lo si utilizza: `deactivate`.
 
 ## Intent JSON File
 Il file `intents.json` definisce la base di conoscenza del bot. È strutturato in una lista di intezioni, ciascuna con:
