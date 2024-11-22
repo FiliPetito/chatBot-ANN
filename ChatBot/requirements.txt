@@ -4,3 +4,6 @@ torch
 Flask
 requests
 waitress
+spacy
+pyspellchecker
+scikit-learn
