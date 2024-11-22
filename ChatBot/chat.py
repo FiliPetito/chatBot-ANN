@@ -6,13 +6,25 @@ import torch
 from datetime import datetime
 
 from model import NeuralNet
-from nltk_utils import bag_of_words, tokenize
+from nltk_utils import bag_of_words, tokenize_and_correct
+from spellchecker import SpellChecker
 
 device = torch.device('cpu')
 #device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 with open('intents.json', 'r', encoding="utf8") as json_data:
     intents = json.load(json_data)
+
+# Inizializza il correttore ortografico
+spell = SpellChecker(language='it')
+
+# Funzione per correggere l'ortografia dell'input
+def correct_spelling(sentence):
+    corrected_sentence = []
+    for word in sentence:
+        corrected_word = spell.correction(word)  # Corregge la parola
+        corrected_sentence.append(corrected_word if corrected_word else word)
+    return corrected_sentence
 
 FILE = "data.pth"
 #data = torch.load(FILE)
@@ -32,7 +44,10 @@ model.eval()
 bot_name = "Cardinal"
 
 def get_response(msg):
-    sentence = tokenize(msg)
+    # Tokenizza e corregge l'ortografia dell'input utente
+    sentence = tokenize_and_correct(msg)
+    sentence = correct_spelling(sentence)  # Applica il correttore ortografico
+    print("Correct sentence ",  sentence )
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
     X = torch.from_numpy(X).to(device)

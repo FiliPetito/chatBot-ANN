@@ -3,109 +3,98 @@
     {
       "tag": "greeting",
       "patterns": [
-        "Hi",
-        "Hey",
-        "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day"
-      ],
-      "responses": [
-        "Hey :-)",
-        "Hello, thanks for visiting",
-        "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
-      ]
-    },
-    {
-      "tag": "saluto",
-      "patterns": [
         "Ciao",
-        "Hey",
+        "Ehi",
+        "Come va?",
         "C'è qualcuno?",
-        "Hello",
-        "Buon giorno"
+        "Salve",
+        "Buongiorno"
       ],
       "responses": [
-        "Hey :-)",
-        "Savle, io sono Cardinal",
-        "Salve, cosa posso fare per te",
-        "Salve, come posso aiutarti?"
+        "Ehi, benvenuto nel nostro store! Come posso aiutarti?",
+        "Ciao, grazie per essere passato! In cosa posso esserti utile?",
+        "Ciao! Sei pronto per fare qualche acquisto? 😄"
       ]
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
+      "patterns": ["Arrivederci", "Ci vediamo", "A presto"],
       "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
+        "A presto, grazie per aver visitato il nostro store! Torna presto! 👾",
+        "Ci vediamo! Buona giornata e divertiti a giocare!",
+        "Arrivederci! Non dimenticare di tornare per altri giochi fantastici! 🎮"
       ]
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
-    },
-    {
-      "tag": "addio",
-      "patterns": ["Addio", "Ci vediamo dopo", "Addio"],
+      "patterns": ["Grazie", "Ti ringrazio", "Grazie mille"],
       "responses": [
-        "Ci vediamo dopo, grazie per la visita",
-        "Buona giornata",
-        "Ciao, torna presto"
+        "Figurati! È sempre un piacere aiutarti.",
+        "Con piacere! Buon gioco!",
+        "Felice di esserti stato utile! 😁"
       ]
     },
     {
-      "tag": "grazie",
-      "patterns": ["Grazie", "È utile", "Grazie mille!"],
-      "responses": ["Felice di aiutare!", "Quando vuoi!", "Con piacere"]
-    },
-    {
-      "tag" : "creatore",
-      "patterns": ["Chi ti ha creato?", "Chi è il tuo creatore?", "Mi dici il nome del tuo creatore?"],
-      "responses": ["Il mio creatore è Filippo Petito", "Mi ha creato Filippo Petito", "Sono una creazione di Filippo Petito"]
-    },
-    {
-      "tag" : "domandeEsistenziali",
-      "patterns": ["Cosa sei?"],
-      "responses": ["Sono una IA creata da Filippo Petito, il mio linguaggio di programmazione è Python ed utilizzo la libreria nltk"]
-    },
-    {
-      "tag": "funny",
-      "patterns": [
-        "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
-      ],
+      "tag": "help",
+      "patterns": ["Mi puoi aiutare?", "Come posso trovare un gioco?", "Cosa posso fare qui?"],
       "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
+        "Certo! Se cerchi un gioco, prova a usare la barra di ricerca o guarda le nostre categorie! 😎",
+        "Posso aiutarti a trovare i giochi più recenti o quelli più popolari. Che tipo di gioco stai cercando?",
+        "Hai bisogno di consigli? Fammi sapere cosa ti piace, così ti suggerisco qualcosa! 🎮"
       ]
     },
     {
-      "tag" : "circuitoAperto",
-      "patterns" : ["Creami un circuito aperto", "Apri il circuito"],
-      "responses": ["\n  ┌──────┬──────┐ \n   | ░░░░░░| ░░░░░░ \\ \n+╩ ░░░░░  | ░░░░░░ | \n  ░░░░░░░R ░░░░░  | \n-╦ ░░░░░  | ░░░░░░ | \n  | ░░░░░░| ░░░░░░ | \n └──────┴──────┘ \n"]
-    }
-    ,
-    {
-      "tag" : "circuitoChiuso",
-      "patterns" : ["Creami un circuito chiuso", "Chiudi il circuito"],
-      "responses" : ["\n  ┌──────┬──────┐ \n   | ░░░░░░| ░░░░░░ | \n+╩ ░░░░░  | ░░░░░░ | \n  ░░░░░░░R ░░░░░  | \n-╦ ░░░░░  | ░░░░░░ | \n  | ░░░░░░| ░░░░░░ | \n └──────┴──────┘ \n"]
-    },
-    {
-      "tag": "vario",
-      "patterns": ["Sai dirmi cosa sai fare?", "Cosa sai fare?", "Hai qualche specialità?"],
+      "tag": "game_recommendation",
+      "patterns": ["Consigliami un gioco", "Quale gioco mi consigli?", "Che gioco dovrei comprare?"],
       "responses": [
-        "Certo, chiedimi di creare un circuito aperto o chiuso", "So apire e chiudere un circuito"
+        "Dipende da cosa ti piace! Se ami l'azione, ti consiglio 'DOOM Eternal'. Se preferisci i giochi di ruolo, prova 'The Witcher 3'. 🎮",
+        "Ti piacciono i giochi di avventura? Prova 'Horizon Zero Dawn', è fantastico! 🚀",
+        "Se sei un fan dei giochi di sport, non puoi perderti 'FIFA 24'! ⚽"
       ]
     },
     {
-      "tag": "orario",
-      "patterns": ["Sai dirmi che ore sono?", "Che ore sono?", "Sai dirmi l'ora?", "Sai dirmi che giorno è?", "Che giorno è?"],
+      "tag": "game_info",
+      "patterns": ["Mi parli di questo gioco?", "Cosa puoi dirmi di questo gioco?", "Qual è la trama di questo gioco?"],
       "responses": [
-        "Certo,"
+        "Questo gioco è un'avventura epica piena di azione, puzzle e un mondo aperto da esplorare. Devi assolutamente provarlo!",
+        "La trama di questo gioco ti porterà in un mondo fantastico dove ogni tua scelta conta. Prepara la tua mente per un'avventura incredibile!",
+        "In questo gioco, esplorerai ambientazioni mozzafiato e combatterai contro nemici unici. È davvero imperdibile!"
+      ]
+    },
+    {
+      "tag": "order_status",
+      "patterns": ["Dove è il mio ordine?", "Quando arriva il mio ordine?", "Stato dell'ordine"],
+      "responses": [
+        "Verifica la tua email per il numero di tracciamento del pacco. In caso contrario, puoi sempre controllare lo stato del tuo ordine nella tua area personale.",
+        "Controlla nella tua area account per l'aggiornamento del tuo ordine. Se hai bisogno di assistenza, scrivimi pure!",
+        "Se hai bisogno di info sul tuo ordine, fammi sapere il numero dell'ordine e sarò felice di darti una mano."
+      ]
+    },
+    {
+      "tag": "payment",
+      "patterns": ["Quali metodi di pagamento accettate?", "Posso pagare con PayPal?", "Che metodi di pagamento ci sono?"],
+      "responses": [
+        "Accettiamo carte di credito, PayPal, e bonifico bancario. Scegli quello che ti è più comodo! 💳",
+        "Puoi pagare con PayPal, carte di credito, e altre opzioni di pagamento sicure.",
+        "Tutti i pagamenti sono sicuri e puoi scegliere tra diversi metodi, come carte di credito, PayPal e altro."
+      ]
+    },
+    {
+      "tag": "game_platforms",
+      "patterns": ["Questo gioco è per PC o console?", "Su che piattaforme è disponibile questo gioco?", "Posso giocare su PS5 con questo gioco?"],
+      "responses": [
+        "Questo gioco è disponibile per PS5, Xbox e PC. Scegli la tua piattaforma preferita! 🎮",
+        "Sì, questo gioco è compatibile con tutte le principali console e PC. Puoi giocare su PS5, Xbox o su PC!",
+        "Puoi giocare su PlayStation, Xbox o PC. Scopri su quale piattaforma ti diverti di più!"
+      ]
+    },
+    {
+      "tag": "return_policy",
+      "patterns": ["Posso restituire un gioco?", "Come posso fare un reso?", "Voglio restituire un gioco"],
+      "responses": [
+        "I resi sono possibili entro 14 giorni dall'acquisto, purché il gioco sia in condizioni perfette. Contatta il nostro supporto per ulteriori dettagli!",
+        "Se hai comprato un gioco fisico, puoi restituirlo entro 14 giorni. I giochi digitali, però, non possono essere restituiti dopo il download.",
+        "Contattaci entro 14 giorni per fare un reso, saremo felici di aiutarti!"
       ]
     }
   ]
