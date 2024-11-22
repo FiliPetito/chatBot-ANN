@@ -1,15 +1,20 @@
 import numpy as np
 import nltk
+
+"""Utilizzo di Spacy per un migliore supporto per la tokenizzazione in italiano"""
+import spacy
+nlp = spacy.load("it_core_news_sm")
+
 nltk.download('all')
-from nltk.stem.porter import PorterStemmer
-stemmer = PorterStemmer()
+#from nltk.stem.porter import PorterStemmer
+
+"""SnowballStemmer di NLTK per l'ottimizzazione in italiano"""
+from nltk.stem.snowball import SnowballStemmer
+stemmer = SnowballStemmer("italian")  # Imposta lo stemmer sulla lingua italiana
 
 def tokenize(sentence):
-    """
-    split sentence into array of words/tokens
-    a token can be a word or punctuation character, or number
-    """
-    return nltk.word_tokenize(sentence)
+    doc = nlp(sentence)
+    return [token.text for token in doc]
 
 
 def stem(word):

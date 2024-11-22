@@ -64,12 +64,12 @@
     {
       "tag" : "creatore",
       "patterns": ["Chi ti ha creato?", "Chi è il tuo creatore?", "Mi dici il nome del tuo creatore?"],
-      "responses": ["Il mio creatore è Mario Petito", "Mi ha creato Mario Petito", "Sono una creazione di Mario Petito"]
+      "responses": ["Il mio creatore è Filippo Petito", "Mi ha creato Filippo Petito", "Sono una creazione di Filippo Petito"]
     },
     {
       "tag" : "domandeEsistenziali",
       "patterns": ["Cosa sei?"],
-      "responses": ["Sono una IA creata da Mario Petito, il mio linguaggio di programmazione è Python ed utilizzo la libreria nltk"]
+      "responses": ["Sono una IA creata da Filippo Petito, il mio linguaggio di programmazione è Python ed utilizzo la libreria nltk"]
     },
     {
       "tag": "funny",
