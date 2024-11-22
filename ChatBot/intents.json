@@ -96,6 +96,23 @@
         "Se hai comprato un gioco fisico, puoi restituirlo entro 14 giorni. I giochi digitali, però, non possono essere restituiti dopo il download.",
         "Contattaci entro 14 giorni per fare un reso, saremo felici di aiutarti!"
       ]
+    },
+    {
+      "tag": "search_game",
+      "patterns": ["Mi puoi trovare dei giochi di avventura che costano meno di 15 euro?", "Cerca per me dei giochi di strategia sotto i 5 euro, per favore!", "Hai dei giochi di simulazione che non superano i 10 euro?",
+                    "Mi interessa qualche gioco di ruolo economico, magari sotto i 8 euro.", "Puoi trovarmi dei giochi d'azione a meno di 20 euro?", "Fammi vedere dei giochi sportivi che costano meno di 12 euro.",
+                    "Cerco dei giochi di corse che costano meno di 7 euro, mi aiuti?", "Mi serve qualche gioco di combattimento che costi sotto i 10 euro.",
+                    "Hai dei giochi horror che costano meno di 5 euro?", "Voglio giochi di piattaforma economici, possibilmente sotto i 6 euro.", "Mi puoi trovare dei giochi di avventura che costano più di 20 euro?",
+                    "Cerca per me dei giochi di strategia sopra i 15 euro, per favore!",
+                    "Hai dei giochi di simulazione che superano i 30 euro?",
+                    "Mi interessa qualche gioco di ruolo che costi più di 25 euro.",
+                    "Puoi trovarmi dei giochi d'azione che vanno oltre i 40 euro?",
+                    "Fammi vedere dei giochi sportivi che costano più di 50 euro.",
+                    "Cerco dei giochi di corse che superano i 20 euro, mi aiuti?",
+                    "Mi serve qualche gioco di combattimento che costi più di 30 euro.",
+                    "Hai dei giochi horror che costano oltre i 15 euro?",
+                    "Voglio giochi di piattaforma che costino più di 18 euro."],
+      "responses": []
     }
   ]
 }
