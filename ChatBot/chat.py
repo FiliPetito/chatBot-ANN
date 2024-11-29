@@ -2,7 +2,8 @@ import random
 import json
 
 import torch
-
+from dbConnection import SessionLocal
+from entity.genre import Genre
 from datetime import datetime
 
 from model import NeuralNet
@@ -11,6 +12,9 @@ from spellchecker import SpellChecker
 
 import spacy
 import re
+
+# Crea una nuova sessione
+session = SessionLocal()
 
 # Carica il modello di SpaCy per l'italiano
 nlp = spacy.load('it_core_news_sm')
@@ -65,12 +69,23 @@ def get_response(msg):
 
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
-    if prob.item() > 0.50:
+    if prob.item() > 0.70:
+        print(tag)
         if tag == "orario":
             return "Oggi è: " + str(datetime.now())
         if tag == "search_game":
             extract_game_and_price(msg)
             return "Cerca il gioco nel database..."
+        if tag == "genres":
+            list_genres = ""
+            try:
+                # Query per ottenere tutti i generi
+                genres = session.query(Genre).all()
+                for genre in genres:
+                    list_genres += genre.name + ", "
+            finally:
+                session.close()
+            return list_genres
         else:
             for intent in intents['intents']:
                 if tag == intent["tag"]:

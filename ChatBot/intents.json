@@ -113,6 +113,11 @@
                     "Hai dei giochi horror che costano oltre i 15 euro?",
                     "Voglio giochi di piattaforma che costino più di 18 euro."],
       "responses": []
+    },
+    {
+      "tag": "genres",
+      "patterns": ["Sai dirmi che tipologie di giochi ci sono ?", "Quante tipologie esistono?", "Potresti indicarmi le tipologie di gioco che ci sono in catalogo?", "Che generi hai?", "Quali generi ci sono?", "Quanti generi ci sono?"],
+      "responses": []
     }
   ]
 }
