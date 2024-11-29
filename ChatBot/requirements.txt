@@ -7,3 +7,6 @@ waitress
 spacy
 pyspellchecker
 scikit-learn
+mysql-connector-python
+python-dotenv
+SQLAlchemy
